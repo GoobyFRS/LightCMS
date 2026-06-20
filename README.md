@@ -11,20 +11,16 @@ My idea is Goobs CMS is a semi-WordPress replacement. The Python3 Flask interfac
 ### Required Features
 
 - Basic User Login
-- In-Browser Markdown Editor
-- Post & Page CRUD (Create Read Update Delete)
 - YAML Front Matter
 - Draft and Published States (Scheduled in the future)
 - Page hierarchy. Child -> Parent -> Grandparent
 - Tags
 - Custom Site Branding via YAML
-- RSS Feed Generator on runtime
-- Sitemap generated on runtime
-- robots.txt on runtime
-- On Demand Build and Push updates from Dashboard
-- Perhaps some level of GitHub repo integration for version control
+- RSS Feed Generator on build
+- Sitemap generated on build
+- robots.txt on build
 - Basic image uploads.
-- PNG/JPG to WebP converter
+- PNG/JPG to WebP converter.
 
 #### WordPress Features I Do NOT Need
 
@@ -33,3 +29,17 @@ My idea is Goobs CMS is a semi-WordPress replacement. The Python3 Flask interfac
 - Plugin Marketplace
 - Block Editors
 - Pingbacks
+
+File Structure
+
+```txt
+_site
+_data
+-> authors.md
+-> nav.yml
+-> ui.yml
+_includes
+-> 
+theme
+-> 
+```
